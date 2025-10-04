@@ -6,9 +6,9 @@ export default function Companies() {
   const [companies, setCompanies] = useState<CompanyDto[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    loadCompanies();
-  }, []);
+  // useEffect(() => {
+  //   loadCompanies();
+  // }, []);
 
   const loadCompanies = async () => {
     setLoading(true);

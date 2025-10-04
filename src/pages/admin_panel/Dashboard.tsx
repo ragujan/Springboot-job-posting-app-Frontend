@@ -2,6 +2,11 @@ import { Users, DollarSign, BarChart2 } from "lucide-react";
 import CardStat from '@/components/admin_panel/CardStat';
 
 export default function Dashboard() {
+  const test = ()=>{
+    const val:string = "33";
+    console.log(val);
+    alert("hey");
+  }
   return (
     <div className="p-6">
       {/* Heading */}
@@ -20,7 +25,7 @@ export default function Dashboard() {
       <div className="mt-8">
         <h3 className="mb-4 text-xl font-semibold text-text">Quick Actions</h3>
         <div className="flex flex-wrap gap-4">
-          <button className="px-4 py-2 transition rounded-lg bg-accent text-text hover:bg-hover">
+          <button onClick={test} className="px-4 py-2 transition rounded-lg bg-accent text-text hover:bg-hover">
             Add User
           </button>
           <button className="px-4 py-2 transition rounded-lg bg-accent text-text hover:bg-hover">
