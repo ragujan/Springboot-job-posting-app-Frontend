@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
-
 @import "tailwindcss";
 
 @theme {
-  --color-dark: #0b0b14;      /* blackish background */
-  --color-blue: #16213e;      /* slightly darker, deeper blue */
-  --color-purple: #2e1a44;    /* a richer, warmer purple */
-  --color-accent: #6C63FF;    /* bright accent stays */
-  --color-text: #e5e5e5;      /* light text */
-  --color-card-bg: #1e253e;   /* dark card background */
-  --color-hover: #3a2c5b;     /* hover highlight for buttons / cards */
+--color-dark: #eceff4; /* soft off-white background */
+--color-blue: #cbd4e6; /* light blue */
+--color-purple: #d9cce3; /* muted lavender */
+--color-accent: #6c63ff; /* keep bright accent */
+--color-accent: #6c63ff; /* keep bright accent */
+--color-text: #2e2e2e; /* dark gray text for contrast */
+--color-accent: #6c63ff; /*keep bright accent */
+--color-accent: #6c63ff; /* keep bright accent */
+--color-card-bg: #f7f8fa; /* very soft card background */
+--color-hover: #e2dff7; /* subtle hover highlight */
 }

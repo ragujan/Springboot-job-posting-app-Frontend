@@ -1,5 +1,6 @@
 import type { CreateCompanyDto, CompanyDto } from "@/types/company";
-import axiosInstance from "./api"; // using your axiosInstance
+import axiosInstance from "./axiosInstance"; // using your axiosInstance
+import type { Page } from "@/types/Page";
 
 const COMPANIES_PATH = "/companies";
 
@@ -8,8 +9,8 @@ export const createCompany = async (dto: CreateCompanyDto): Promise<CompanyDto> 
   return res.data;
 };
 
-export const getCompanies = async (): Promise<CompanyDto[]> => {
-  const res = await axiosInstance.get<CompanyDto[]>(COMPANIES_PATH);
+export const getCompanies = async (): Promise<Page<CompanyDto>> => {
+  const res = await axiosInstance.get<Page<CompanyDto>>(COMPANIES_PATH);
   return res.data;
 };
 
